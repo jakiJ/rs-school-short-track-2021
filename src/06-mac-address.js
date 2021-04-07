@@ -12,8 +12,12 @@
  * For 00-1B-63-84-45-E6, the output should be true.
  *
  */
-function isMAC48Address(/* n */) {
-  throw new Error('Not implemented');
+function getMatrixElementsSum(n) {
+  let valid = false;
+  if (/^([0-9A-F]{1,2}[-]){5}[0-9A-F]{1,2}$/.test(n)) {
+    valid = true;
+  }
+  return valid;
 }
 
-module.exports = isMAC48Address;
+module.exports = getMatrixElementsSum;
